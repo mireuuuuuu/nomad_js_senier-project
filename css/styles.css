@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.main-contents{
+    height: 50%;
+    display: flex;
+}
+#weather{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.clock-and-greeting{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+}
+.calender{
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+}
+.calender span{
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.today{
+    background-color: rgba(255,255,255,0.3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) ;
+}
+#clock{
+    font-size: 80px;
+    margin: 25px 0px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+#greeting{
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+/* #login-form {
+    display: flex;
+    flex-direction: column;
+} */
+#login-form input{
+    height: 25px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid white;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#login-form button{
+    height: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+#login-form input::placeholder{
+    color: white;
+    text-align: center;
+}
+.todo{
+    width: 400px;
+    padding: 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.3);
+}
+#todo-form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#todo-form input{
+    height: 25px;
+    width: 250px;
+    background-color: rgba(255,255,255);
+    box-shadow: none;
+    border: 0px;
+    border-bottom: 1px solid white;
+    border-radius: 20px;
+    color: black;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#todo-list li{
+    margin-bottom: 10px;
+}
+#todo-list button{
+    height: 20px;
+    background-color:white;
+    border-radius: 10px;
+    color: black;
+    border:none;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 0px 10px;
+}
+#todo-form input::placeholder{
+    color: black;
+    text-align: center;
+}
+img{
+    z-index: -1;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#quotes{
+    width: 600px;
+    text-align: center;
+    line-height:23px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+#quotes span:last-child{
+    color: rgba(255,255,255,0.5);
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.hidden{
+    display: none;
+}
